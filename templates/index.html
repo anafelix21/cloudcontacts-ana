@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudContacts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white p-8">
+  <h1 class="text-3xl font-bold mb-6 text-center">Agregar Contacto</h1>
+  <form action="/add" method="post" class="max-w-md mx-auto bg-gray-800 p-6 rounded-xl shadow-md">
+    <input name="name" placeholder="Nombre Completo" required class="w-full p-2 mb-3 rounded bg-gray-700">
+    <input name="email" type="email" placeholder="Correo Electrónico" required class="w-full p-2 mb-3 rounded bg-gray-700">
+    <input name="phone" placeholder="Teléfono (Opcional)" class="w-full p-2 mb-3 rounded bg-gray-700">
+    <button class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Guardar</button>
+  </form>
+  <div class="text-center mt-4">
+    <a href="/contacts" class="text-blue-400 hover:underline">Ver lista de contactos</a>
+  </div>
+</body>
+</html>
